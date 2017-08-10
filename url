@@ -1,0 +1,6 @@
+<a href="jieshulishi.jsp" target="mainFrame" id="myclass7" onclick="changeClass('myclass7')" class="active"><img src="../images/logo.png" width="16">&nbsp;&nbsp;借阅历史</a>
+
+
+http://222.24.3.7:8080/opac_two/reader/jieshulishi.jsp?library_id=A%253A%25C3%258E%25C3%25B7%25C2%25B0%25C2%25B2%25C3%2593%25C3%258A%25C2%25B5%25C3%25A7%25C3%2591%25C2%25A7%25C3%2594%25C2%25BA%25C3%258D%25C2%25BC%25C3%258A%25C3%25A9%25C2%25B9%25C3%259D&fromdate=2013-9-7&todate=2017-6-7
+
+

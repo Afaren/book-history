@@ -1,0 +1,97 @@
+body			{	
+ background-color:   #F9FCFE; 
+SCROLLBAR-HIGHLIGHT-COLOR : buttonface; 
+					SCROLLBAR-SHADOW-COLOR : buttonface; 
+					SCROLLBAR-3DLIGHT-COLOR : buttonhighlight; 
+					SCROLLBAR-TRACK-COLOR : #eeeeee; 
+					SCROLLBAR-DARKSHADOW-COLOR : buttonshadow; }
+
+body,td,p		{	font-size: 12px;	color: #002065;
+						font-family: Verdana, 宋体,Geneva, Arial, Helvetica, sans-serif;
+						margin : 0px 0px 0px 0px;}
+
+p					{	margin: 5px 5px 5px 5px;}
+
+/*a					{	color : #B5655A;	text-decoration : none;}
+a:hover		{	color : #AA3F4E;	text-decoration : underline;}
+a:active		{	color : #AA3F4E;	text-decoration : none;}
+*/
+.big				{	font-size : 14px;	}
+.opac_en		{	font-size : 9px;	}
+.opac_red		{	color : #B5655A;}
+.opac_orange {
+	COLOR: #ff6600;  FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.opac_black				{	color : #636563;}
+.opac_black:hover	{	color : #B5655A;	text-decoration : none;}
+.opac_black:active	{	color : #B5655A;	text-decoration : none;}
+
+.opac_blue				{	color : #426994;}
+.opac_blue:visited	{	color : #636563;}
+.opac_blue:hover		{	color : #426994;	text-decoration : underline;}
+.opac_blue:active		{	color : #426994;	text-decoration : none;}
+
+.opac_blue1				{	color : #426994;}
+.opac_blue1:hover	{	color : #426994;	text-decoration : underline;}
+.opac_blue1:active	{	color : #426994;	text-decoration : none;}
+
+.opac_white				{	color : #D9D9D9;}
+.opac_white:hover	{	color : #F7F7E7;	text-decoration : none;}
+.opac_white:active	{	color : #F7F7E7;	text-decoration : none;}
+
+.opac_white1			{	color : #D9D9D9;	text-decoration : underline;}
+.opac_white1:link		{	color : #D9D9D9;	text-decoration : underline;}
+.opac_white1:hover	{	color : #F7FBFF;	text-decoration : none;}
+.opac_white1:active	{	color : #F7FBFF;	text-decoration : none;}
+
+.opac_div		{	visibility: hidden; 	POSITION: absolute; 	margin-top:4px}
+
+ol				{	margin : 5px 5px 5px 28px ;	}
+li				{	margin : 5px 5px 5px 0px ;	}
+
+hr				{	height : 1px;	width: 100%;	background-color : #757780;}
+
+form						{	margin:0px;				padding:0px;}
+input.input_text1	{	font-size : 14px;					color : #747980;		height : 18px; width:80px;
+								background : #EBF0F2;		border : 1px solid #AEB6BF;}
+input.input_text	{	font-size : 14px;					color : #747980;		height : 18px; width:120px;
+								background : #EBF0F2;		border : 1px solid #AEB6BF;}
+input.button			{	font-size: 10px;					color : #747980;		height : 16px;
+								background : ButtonFace;	border : 1px ridge ButtonHighlight;}
+select					{	font-size : 12px;					color : #747980;	
+								background: #EBF0F2;		width : 120px;}
+
+
+
+
+
+<!--一下为暂不使用的style-->
+
+span			{	scrollbar-shadow-color : #F7F4F2;
+					scrollbar-highlight-color : #F7F4F2;
+					scrollbar-3dlight-color : #AFB0B3;
+					scrollbar-darkshadow-color : #AFB0B3;
+					scrollbar-arrow-color : #AFB0B3;
+					scrollbar-face-color : #F7F4F2;
+					scrollbar-track-color : #FAFAFA;
+					scrollbar-base-color : #FAFAFA;}
+
+input.login		{	height: 16px;	font-size: 12px;	color: #56575C;
+					background : transparent;	border : none;	border-bottom : 1px dotted #56575C;}
+textarea		{	font-size : 12px;	color: #56575C;
+					background: #E7E8E6;	border: 1px solid #56575C;	overflow: auto}
+
+.borderstyle	{	border : 1px dotted #E5E5E5;}
+.opac_grey		{	color : #B2BECA;}
+.red			{	color : #AA3F4E;}
+.grey			{	color : #56575C;}
+
+.white			{	color : #FAFAFA;}
+.white:hover	{	color : #FAFAFA;	text-decoration : underline;}
+.white:active	{	color : #FAFAFA;	text-decoration : none;}
+
+
+.opac_title				{	color : #000000; font-weight:bold; height: 25px;letter-spacing:1pt;  text-align:center;}
+.opac_title_top				{	color : #000000; font-weight:bold; height: 25px;letter-spacing:10pt;  text-align:center;}
+.opac_white:hover	{	color : #ffffff;	font-weight:bold;}
+.opac_white:active	{	color : #ffffff;	font-weight:bold;}
