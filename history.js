@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     "name": "图书题名",
     "number": "序号",
