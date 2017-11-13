@@ -1,0 +1,19 @@
+{
+  "name": "college-book-history-analysis",
+  "version": "1.0.0",
+  "description": "分析大学期间读过的书",
+  "main": "app.js",
+  "dependencies": {
+    "superagent": "^3.5.2",
+    "async": "^2.1.5"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "college",
+    "book",
+    "history",
+    "analysis"
+  ],
+  "author": "Afaren",
+  "license": "ISC"
+}
