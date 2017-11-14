@@ -4,8 +4,9 @@
   "description": "分析大学期间读过的书",
   "main": "app.js",
   "dependencies": {
+    "async": "^2.1.5",
     "superagent": "^3.5.2",
-    "async": "^2.1.5"
+    "underscore": "^1.8.3"
   },
   "devDependencies": {},
   "keywords": [
