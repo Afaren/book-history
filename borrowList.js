@@ -8,5 +8,10 @@ history = history.filter(h => h.operation === '借书')
 
 history = Array.from(new Set(history));
 
-// console.log(history.length);
-history.forEach(h => console.log(h))
+history = history.map(h => `"${h}"`)
+       .join(',\n')
+
+
+console.log("module.exports = [")
+console.log(history);
+console.log("]")
