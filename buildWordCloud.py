@@ -1,44 +1,44 @@
 #! /usr/bin/python
 # coding=utf-8
-import PIL
-import jieba
 import matplotlib.pyplot as plt
-import numpy as np
+import sys
 from wordcloud import WordCloud
 
-
-import sys
-default_encoding="utf-8"
-if(default_encoding!=sys.getdefaultencoding()):
+# 这段是网上抄的，用于解决编码问题
+default_encoding = "utf-8"
+if (default_encoding != sys.getdefaultencoding()):
     reload(sys)
     sys.setdefaultencoding(default_encoding)
 
-def wordcloudplot(txt):
-    path = 'simhei.ttf'
-    path = unicode(path, 'utf8').encode('gb18030')
-    # background_image = 'timg.jpeg'
-    # alice_mask = np.array(PIL.Image.open(background_image))
-    wordcloud = WordCloud(font_path=path,
+
+# 1. 重命名变量名，更加表意
+# 2. 抽取目标文件名为函数参数
+def wordcloudplot(words, targetFile):
+    chineseFontFile = 'simhei.ttf'
+    encodeFontFile = unicode(chineseFontFile, 'utf8').encode('gb18030')
+    wordcloud = WordCloud(font_path=encodeFontFile,
                           background_color="black",
-                          margin=5, width=2100, height=1000,# mask=alice_mask,
+                          margin=5, width=2100, height=1000,
                           max_words=2000,
                           max_font_size=130, random_state=42)
-    wordcloud = wordcloud.generate(txt)
-    wordcloud.to_file('one_punch2.jpg')
+    wordcloud = wordcloud.generate(words)
+    wordcloud.to_file(targetFile)
     plt.imshow(wordcloud)
     plt.axis("off")
     plt.show()
 
 
-f = open('tags_words.txt', 'r').read()
-words = f.split('\n')
+tagsFile = 'tags_words.txt'
+targetFile = 'one_punch2.jpg'
 
-a = []
-for w in words:
-    if len(w) > 1:
-        print(w)
-        a.append(w)
-txt = u' '.join(a)
-print(u' '.join(a))
-wordcloudplot(txt)
-# print(txt)
+with open(tagsFile, 'r') as tagsInput:
+    tags = tagsInput.read().split('\n')
+    a = []
+    for tag in tags:
+        if len(tag) > 1:
+            print(tag)
+            a.append(tag)
+    txt = u' '.join(a)
+    print(u' '.join(a))
+    wordcloudplot(txt, targetFile)
+
