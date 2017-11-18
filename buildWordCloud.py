@@ -41,7 +41,7 @@ def generateWordCloudFrom(file, wordCloudFile):
 
 
 tagsFile = 'tags_words.txt'
-targetFile = 'my-book-history-in-collage-word-cloud.jpg'
+targetFile = 'analysis-result/my-book-history-in-collage-word-cloud.jpg'
 generateWordCloudFrom(tagsFile, targetFile)
 
 
