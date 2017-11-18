@@ -36,9 +36,9 @@ with open(tagsFile, 'r') as tagsInput:
     a = []
     for tag in tags:
         if len(tag) > 1:
-            print(tag)
+            print(tag)        # 打印出来只是为了看是否乱码
             a.append(tag)
     txt = u' '.join(a)
-    print(u' '.join(a))
+    print(u' '.join(a))       # 打印出来只是为了看是否乱码
     wordcloudplot(txt, targetFile)
 
