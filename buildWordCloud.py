@@ -27,18 +27,21 @@ def wordcloudplot(words, targetFile):
     plt.axis("off")
     plt.show()
 
+def generateWordCloudFrom(file, wordCloudFile):
+    with open(file, 'r') as tagsInput:
+        tags = tagsInput.read().split('\n')
+        validTagList = []
+        for tag in tags:
+            if len(tag) > 1:
+                print(tag)  # 打印出来只是为了看是否乱码
+                validTagList.append(tag)
+        tagsText = u' '.join(validTagList)
+        print(u' '.join(validTagList))  # 打印出来只是为了看是否乱码
+        wordcloudplot(tagsText, wordCloudFile)
+
 
 tagsFile = 'tags_words.txt'
 targetFile = 'my-book-history-in-collage-word-cloud.jpg'
+generateWordCloudFrom(tagsFile, targetFile)
 
-with open(tagsFile, 'r') as tagsInput:
-    tags = tagsInput.read().split('\n')
-    a = []
-    for tag in tags:
-        if len(tag) > 1:
-            print(tag)        # 打印出来只是为了看是否乱码
-            a.append(tag)
-    txt = u' '.join(a)
-    print(u' '.join(a))       # 打印出来只是为了看是否乱码
-    wordcloudplot(txt, targetFile)
 
