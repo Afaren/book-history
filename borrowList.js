@@ -1,17 +1,9 @@
-let history = require("./history")
+const history = require("./history")
 
-
-history = history.filter(h => h.operation === '借书')
+const borrowHistory = history.filter(h => h.operation === '借书')
                  .map(h => h.name)
                  .map(h => h.split('=')[0].trim())
 
+const distinctBorrowHistory = Array.from(new Set(borrowHistory));
 
-history = Array.from(new Set(history));
-
-history = history.map(h => `"${h}"`)
-       .join(',\n')
-
-
-console.log("module.exports = [")
-console.log(history);
-console.log("]")
+module.exports = distinctBorrowHistory;
