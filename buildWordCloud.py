@@ -10,9 +10,9 @@ if (default_encoding != sys.getdefaultencoding()):
     reload(sys)
     sys.setdefaultencoding(default_encoding)
 
-
-# 1. 重命名变量名，更加表意
-# 2. 抽取目标文件名为函数参数
+# 参考的是下面这个知乎回答的代码
+# 你用 Python 做过什么有趣的数据挖掘/分析项目？ - 挖数的回答 - 知乎
+# https://www.zhihu.com/question/28975391/answer/100796070
 def wordcloudplot(words, targetFile):
     chineseFontFile = 'simhei.ttf'
     encodeFontFile = unicode(chineseFontFile, 'utf8').encode('gb18030')
