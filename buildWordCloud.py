@@ -14,7 +14,7 @@ if (default_encoding != sys.getdefaultencoding()):
 # 你用 Python 做过什么有趣的数据挖掘/分析项目？ - 挖数的回答 - 知乎
 # https://www.zhihu.com/question/28975391/answer/100796070
 def wordcloudplot(words, targetFile):
-    chineseFontFile = 'simhei.ttf'
+    chineseFontFile = 'chinese-font/simhei.ttf'
     encodeFontFile = unicode(chineseFontFile, 'utf8').encode('gb18030')
     wordcloud = WordCloud(font_path=encodeFontFile,
                           background_color="black",
