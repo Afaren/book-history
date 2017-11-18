@@ -29,7 +29,7 @@ def wordcloudplot(words, targetFile):
 
 
 tagsFile = 'tags_words.txt'
-targetFile = 'one_punch2.jpg'
+targetFile = 'my-book-history-in-collage-word-cloud.jpg'
 
 with open(tagsFile, 'r') as tagsInput:
     tags = tagsInput.read().split('\n')
